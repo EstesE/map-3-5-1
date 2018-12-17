@@ -1,0 +1,10 @@
+{{#each model.tours as | virtualTour|}}
+		<div style="width: 600px; height: 300px; margin-bottom: 20px;">
+				{{#tour-card
+						virtualTour=virtualTour
+				}}
+				{{/tour-card}}
+		</div>
+{{/each}}
+
+{{outlet}}
